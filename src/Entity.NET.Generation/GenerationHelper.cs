@@ -10,7 +10,9 @@ namespace Entity.NET.Generation
             return null;
         }
 
-      
-        
+        public static string GetExample()
+        {
+            return "using System;";
+        }
     }
 }
