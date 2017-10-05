@@ -1,18 +1,20 @@
-﻿<#@ template debug="false" hostspecific="false" language="C#" #>
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
 <#@ assembly name="System.Core" #>
 <#@ assembly name="System.IO" #>
 <#@ assembly name="System.Xml" #>
 <#@ assembly name="System.Runtime" #>
 <#@ assembly name="System.Text.Encoding" #>
 <#@ assembly name="System.Threading.Tasks" #>
+<#@ assembly name="$(SolutionDir)Entity.NET.Generation\bin\Debug\netstandard1.6\Entity.NET.Generation.dll"#>
 <#@ import namespace="System.Xml" #>
 <#@ import namespace="System.Linq" #>
 <#@ import namespace="System.Text" #>
 <#@ import namespace="System.Collections.Generic" #>
 <#@ import namespace="System.IO" #>
+<#@ import namespace="Entity.NET.Generation" #>
 <#@ output extension=".cs" #>
 using System;
- 
+
 namespace Examples
 {
     public class ExampleClass
@@ -33,6 +35,8 @@ namespace Examples
 <#+
     public List<string> GetNames()
     {
+		var output = SimpleHelper.GetExample();
+
         List<string> result = new List<string>(); 
         XmlDocument doc = new XmlDocument();
         string absolutePath = Path.GetFullPath("../resources/File.xml");                

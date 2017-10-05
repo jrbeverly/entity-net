@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace Entity.NET.Generation
 {
-    public static class GenerationHelper
+    public static class SimpleHelper
     {
         public static IEnumerable<TypeIdentifier> ReadFromXml(Stream stream)
         {
