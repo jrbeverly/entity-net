@@ -1,0 +1,22 @@
+{
+  "slug": "entity-net",
+  "namespace": "jrbeverly",
+  "status": "archived",
+  "icon": "icon.svg",
+  "license": {
+    "type": "MIT",
+    "content": "Jonathan Beverly <jrbeverly>"
+  },
+  "topics": [
+    "prototype",
+    "experiment",
+    "demonstration",
+    "orm",
+    "strongly-typed",
+    "code-generation"
+  ],
+  "languages": [
+    "C#",
+    "Dockerfile"
+  ]
+}
