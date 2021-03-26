@@ -1,0 +1,19 @@
+slug: entity-net
+description: A simple experiment prototyping a concept for strongly typed ORMs.
+project: workbench
+namespace:
+status: archived
+icon: icon.svg
+license:
+  type: MIT
+  content: Jonathan Beverly <jrbeverly>
+  year: 2017
+topics: |-
+  [
+    "prototype",
+    "experiment",
+    "demonstration",
+    "orm",
+    "strongly-typed",
+    "code-generation"
+  ]
